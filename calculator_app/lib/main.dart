@@ -66,3 +66,18 @@ class _SimpleCalculatorState extends State<SimpleCalculator> {
         }
 
       }
+
+      else{
+        equationFontSize = 48.0;
+        resultFontSize = 38.0;
+        if(equation == "0"){
+          equation = buttonText;
+        }else {
+          equation = equation + buttonText;
+        }
+      }
+    });
+  }
+
+   Widget buildButton(String buttonText, double buttonHeight, Color buttonColor){
+    return Container(
