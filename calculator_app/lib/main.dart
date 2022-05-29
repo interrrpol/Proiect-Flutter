@@ -113,3 +113,23 @@ class _SimpleCalculatorState extends State<SimpleCalculator> {
       body: Column(
         children: <Widget>[
 
+
+          Container(
+            alignment: Alignment.centerRight,
+            padding: EdgeInsets.fromLTRB(10, 20, 10, 0),
+            child: Text(equation, style: TextStyle(fontSize: equationFontSize),),
+          ),
+
+
+          Container(
+            alignment: Alignment.centerRight,
+            padding: EdgeInsets.fromLTRB(10, 30, 10, 0),
+            child: Text(ressult, style: TextStyle(fontSize: resultFontSize),),
+          ),
+
+
+          Expanded(
+            child: Divider(),
+          ),
+
+
