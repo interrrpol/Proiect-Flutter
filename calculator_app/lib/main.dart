@@ -133,3 +133,19 @@ class _SimpleCalculatorState extends State<SimpleCalculator> {
           ),
 
 
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Container(
+                width: MediaQuery.of(context).size.width * .75,
+                child: Table(
+                  children: [
+                    TableRow(
+                        children: [
+                          buildButton("C", 1, Colors.redAccent),
+                          buildButton("⌫", 1, Colors.blue),
+                          buildButton("÷", 1, Colors.blue),
+                        ]
+                    ),
+
+
